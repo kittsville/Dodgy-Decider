@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DodgyDecider\\": "src/"
+            "Kittsville\\DodgyDecider\\": "src/"
         },
         "files": ["src/functions.php"]
     }
