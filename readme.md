@@ -15,7 +15,7 @@ $decider = new Decider();
 
 $decider->seed('ffffffffff');
 
-echo $decider->choose(['a', 'b', 'c'], 'example choice');
+echo $decider->choose(['a', 'b', 'c'], 'choose a letter');
 ```
 
 ## Contributing
