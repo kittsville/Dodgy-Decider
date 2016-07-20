@@ -9,7 +9,7 @@ Created for procedurally generating the world of the text adventure game [10 Min
 ## Usage
 
 ```php
-use Kittsville\Dodgy-Decider as Decider;
+use Kittsville\DodgyDecider\Decider;
 
 $decider = new Decider();
 
