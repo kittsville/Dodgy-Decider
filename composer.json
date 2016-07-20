@@ -4,11 +4,11 @@
     "keywords": ["lumen"],
     "license": "MIT",
     "authors": [
-    {
-        "name": "Kit Maywood",
-        "email": "kittsville@gmail.com"
-    }
-],
+        {
+            "name": "Kit Maywood",
+            "email": "kittsville@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=5.5.9"
     },
