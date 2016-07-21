@@ -53,7 +53,7 @@ class Decider {
         }
         
         $choices     = array_keys($array);
-        $num_choices = count($array);
+        $num_choices = count($choices);
         
         if ($num_choices === 0) {
             throw LogicException('Array has no elements to choose one from');
