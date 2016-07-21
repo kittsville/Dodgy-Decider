@@ -39,7 +39,7 @@ class Decider {
      * @param  string $salt  OPTIONAL Salt to make personalise choice
      * @return mixed         Chosen array value
      */
-    public function choose(Array $array, $salt = null)
+    public function chooseElement(Array $array, $salt = null)
     {
         if ($salt) {
             $salted_seed = hash('sha256', $this->seed . $salt);
