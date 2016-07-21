@@ -40,7 +40,7 @@ class Decider {
      * @throws LogicException If array has no elements
      *
      * @param  Array  $array Array of choices to choose an element from
-     * @param  string $salt  OPTIONAL Salt to make personalise choice
+     * @param  string $salt  OPTIONAL Salt to personalise choice
      *
      * @return mixed Chosen array value
      */
