@@ -41,7 +41,8 @@ class Decider {
      *
      * @param  Array  $array Array of choices to choose an element from
      * @param  string $salt  OPTIONAL Salt to make personalise choice
-     * @return mixed         Chosen array value
+     *
+     * @return mixed Chosen array value
      */
     public function chooseElement(Array $array, $salt = null)
     {
