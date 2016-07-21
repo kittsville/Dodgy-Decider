@@ -45,7 +45,7 @@ class Decider {
      */
     public function chooseElement(Array $array, $salt = null)
     {
-        if ($salt) {
+        if ($salt !== null) {
             $salted_seed = hash('sha256', $this->seed . $salt);
         } else {
             $salted_seed = $this->seed;
