@@ -2,6 +2,7 @@
 namespace Kittsville\DodgyDecider;
 
 use Kittsville\DodgyDecider\greatestCommonFactor;
+use \LogicException;
 
 class Decider {
     protected $seed = 'ffffffffffffffffffffffffffffffff';
@@ -35,6 +36,9 @@ class Decider {
     
     /**
      * Chooses a value from an array
+     *
+     * @throws LogicException If array has no elements
+     *
      * @param  Array  $array Array of choices to choose an element from
      * @param  string $salt  OPTIONAL Salt to make personalise choice
      * @return mixed         Chosen array value
@@ -49,6 +53,10 @@ class Decider {
         
         $choices     = array_keys($array);
         $num_choices = count($array);
+        
+        if ($num_choices === 0) {
+            throw LogicException('Array has no elements to choose one from');
+        }
         
         // Uses 2 orders of magnitude to avoid clustering
         $hex_needed = $this->hexDigitsNeeded($num_choices) + 2;
