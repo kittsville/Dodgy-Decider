@@ -5,7 +5,15 @@ use Kittsville\DodgyDecider\greatestCommonFactor;
 use \LogicException;
 
 class Decider {
-    protected $seed = 'ffffffffffffffffffffffffffffffff';
+    protected $seed;
+    
+    /**
+     * @param string $seed Hexadecimal string
+     */
+    public function __construct($seed)
+    {
+        $this->seed = $seed;
+    }
     
     /**
      * Sets seed for making decisions
