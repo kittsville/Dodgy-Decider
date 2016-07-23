@@ -11,9 +11,7 @@ Created for procedurally generating the world of the text adventure game [10 Min
 ```php
 use Kittsville\DodgyDecider\Decider;
 
-$decider = new Decider();
-
-$decider->seed('ffffffffff');
+$decider = new Decider('f37485e931');
 
 echo $decider->chooseElement(['a', 'b', 'c'], 'choose a letter');
 ```
