@@ -60,6 +60,11 @@ class Decider {
             $lower = 0;
             $upper = $a;
             $salt  = null;
+        } else if ($c === null && is_string($b)) {
+            // If the $upper and $salt are given
+            $lower = 0;
+            $upper = $a;
+            $salt  = $b;
         } else if ($c === null) {
             // If the $upper and $lower are given
             $lower = $a;
