@@ -1,7 +1,6 @@
 {
     "name": "kittsville/dodgy-decider",
     "description": "10MtM's procedural generation engine",
-    "keywords": ["lumen"],
     "license": "MIT",
     "authors": [
         {
