@@ -75,7 +75,7 @@ class Decider {
         $num_choices = ($upper - $lower) + 1;
         
         if ($num_choices <= 0) {
-            throw LogicException('Upper bound must be greater than or equal to lower bound');
+            throw new LogicException('Upper bound must be greater than or equal to lower bound');
         }
         
         if ($salt !== null) {
@@ -118,7 +118,7 @@ class Decider {
         $num_choices = count($choices);
         
         if ($num_choices === 0) {
-            throw LogicException('Array has no elements to choose one from');
+            throw new LogicException('Array has no elements to choose one from');
         }
         
         $choice = $this->chooseNumber(0, $num_choices - 1, $salt);
