@@ -22,4 +22,4 @@ As per the name I am fully aware how terrible this is. Feel free contribute with
 
 ## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Dodgy-Decider is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
