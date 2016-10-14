@@ -2,7 +2,7 @@
 
 *"It works, for the most part" - An optimistic contributor*
 
-A small PHP tool for consistently making decisions based off of a given hexadecimal seed.
+A small PHP tool for consistently making decisions based off of a given seed.
 
 Created for procedurally generating the world of the text adventure game [10 Minutes to Meston](https://github.com/kittsville/10-Minutes-to-Meston/).
 
