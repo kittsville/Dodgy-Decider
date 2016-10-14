@@ -12,7 +12,7 @@ class Decider {
      */
     public function __construct($seed)
     {
-        $this->seed = $seed;
+        $this->seed($seed);
     }
     
     /**
@@ -22,7 +22,7 @@ class Decider {
      */
     public function seed($seed)
     {
-        $this->seed = $seed;
+        $this->seed = hash('sha256', $seed);
     }
     
     /**
