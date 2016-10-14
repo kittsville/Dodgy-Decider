@@ -12,7 +12,7 @@ class Decider {
      */
     public function __construct($seed)
     {
-        $this->seed($seed);
+        $this->setSeed($seed);
     }
     
     /**
@@ -20,7 +20,7 @@ class Decider {
      * @param  string $seed Hexadecimal seed
      * @return void
      */
-    public function seed($seed)
+    public function setSeed($seed)
     {
         $this->seed = hash('sha256', $seed);
     }
